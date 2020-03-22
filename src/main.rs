@@ -23,6 +23,9 @@ fn main() {
     // This is callable since the imports described above alos bring in the whole front_of_house module that's listid in restaurant/mod.rs
     restaurant::front_of_house::hosting::add_to_waitlist();
 
+    // We can call this because of the `pub mod grill` call in restaurant/mod.rs
+    restaurant::grill::take_order();
+
     // We have to specify the module here since that's all we imported with the `mod tiki_bar` statement above.
     tiki_bar::drinks::serve();
 }

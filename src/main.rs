@@ -20,6 +20,8 @@ fn main() {
     // Now we move on to calling functions that live in a module that's within a directory in this crate.
     // We can call this because above we `use import_of_call::*;` for everything in the library crate, and within lib.rs we call `pub mod restaurant` which brings in everything from /restaurant/mod.rs.
     restaurant::lobby();
+    // This is callable since the imports described above alos bring in the whole front_of_house module that's listid in restaurant/mod.rs
+    restaurant::front_of_house::hosting::add_to_waitlist();
 
     // We have to specify the module here since that's all we imported with the `mod tiki_bar` statement above.
     tiki_bar::drinks::serve();

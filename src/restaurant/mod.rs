@@ -1,6 +1,7 @@
 // everything in this file is in import-of-call::restaurant.
 
-pub mod grill;
+mod grill;
+pub mod serving;
 
 pub mod front_of_house {
     pub mod hosting {

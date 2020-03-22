@@ -8,3 +8,11 @@ pub mod front_of_house {
         fn seat_at_table() {}
     }
 }
+
+pub fn lobby() {
+    sit_in_lobby();
+}
+
+fn sit_in_lobby() {
+    println!("welcome to the lobby");
+}

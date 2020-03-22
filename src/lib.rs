@@ -1,5 +1,7 @@
 #![allow(dead_code)]
-//mod restaurant;
+
+pub mod restaurant;
+
 pub mod dock {
     pub mod supplies {
         pub fn restock() {
